@@ -1,0 +1,192 @@
+.formation-container {
+  width: 100%;
+  background-color: $c8;
+}
+
+.formation {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70px;
+}
+
+.formation-arte {
+  text-transform: uppercase;
+  font-size: 9rem;
+  color: $black;
+  width: 5ch;
+  word-break: break-all;
+}
+
+.formation-text {
+  margin-top: 30px;
+  max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: $c7;
+}
+.formation-text strong {
+  color: $c1;
+}
+
+.formation-graduation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 26px;
+  margin: 60px auto;
+}
+
+.formation-graduation-card {
+  background: $black;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  position: relative;
+}
+.formation-graduation-card::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: $g1;
+  position: absolute;
+  top: 54px;
+  left: -4px;
+}
+
+.formation-graduation-card-subtitle {
+  font-size: 0.875rem;
+  line-height: 1.42;
+  text-transform: uppercase;
+  color: $c5;
+}
+
+.formation-graduation-card-title {
+  font-size: 1.125rem;
+  line-height: 1.38;
+  font-weight: bold;
+  color: $white;
+  flex: 1;
+}
+
+.formation-graduation-card-school {
+  padding-top: 40px;
+  font-size: 1.125rem;
+  line-height: 1.42;
+  color: $c5;
+}
+
+.extras {
+  margin-bottom: 60px;
+}
+
+.extras-title {
+  color: $c6;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.extras-title::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/cursos.svg");
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.extras-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 1.38;
+  font-weight: bold;
+  color: $white;
+  padding: 10px 0;
+}
+.extras-info span {
+  font-weight: 400;
+  color: $c6;
+}
+
+.extras-title-two {
+  color: $c6;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.extras-title-two::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/idiomas.svg");
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.extras-info-two {
+  font-size: 1.125rem;
+  line-height: 1.38;
+  font-weight: bold;
+  color: $white;
+  padding: 10px 0;
+}
+.extras-info-two span {
+  font-weight: 400;
+  color: $c6;
+}
+
+// RESPONSIVO
+@media (max-width: 970px) {
+  .formation {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .formation-arte {
+    font-size: 2.5rem;
+    word-break: initial;
+  }
+  .formation-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: $c7;
+  }
+}
+
+@media (max-width: 500px) {
+  .formation {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .formation-arte {
+    font-size: 2.5rem;
+    word-break: initial;
+  }
+  .formation-text {
+    max-width: 30ch;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: $c7;
+  }
+
+  .formation-graduation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin: 60px auto;
+  }
+}

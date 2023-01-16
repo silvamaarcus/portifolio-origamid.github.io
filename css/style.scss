@@ -1,0 +1,22 @@
+@import "./scss/global";
+@import "./scss/colors";
+@import "./scss/header";
+@import "./scss/intro";
+@import "./scss/exp";
+@import "./scss/formation";
+@import "./scss/footer";
+
+.formation-container {
+  position: relative;
+}
+
+.formation::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;  
+  left: 20px;
+}

@@ -1,0 +1,40 @@
+.header {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-nav ul li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 3.33rem;
+  color: $c8;
+  cursor: pointer;
+}
+
+
+// RESPONSIVO
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .header a {
+    background: $c1;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .header a:hover {
+    background: rgb(0, 0, 0, 0.55);
+  }
+}

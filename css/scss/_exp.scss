@@ -1,0 +1,102 @@
+.exp {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 160px;
+}
+
+.exp-arte {
+  text-transform: uppercase;
+  font-size: 9rem;
+  color: $c3;
+  word-break: break-all;
+}
+
+.exp-text {
+  margin-top: 30px;
+  max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: $c7;
+}
+.exp-text strong {
+  color: $c8;
+}
+
+.exp-enterprise {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: $c1;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+.exp-enterprise::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: $g1;
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.exp-enterprise-year {
+  position: absolute;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  color: $c7;
+  top: 20px;
+  left: -60px;
+}
+
+.exp-enterprise-title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: $c8;
+}
+
+.exp-enterprise-text {
+  font-size: 0.875rem;
+  line-height: 1.42;
+  color: $c7;
+}
+
+.exp-enterprise-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.exp-enterprise-skills li {
+  font-size: 0.875rem;
+  line-height: 1.42;
+  padding: 5px 10px;
+  background: $white;
+  border-radius: 5px;
+}
+
+// RESPONSIVO
+@media (max-width: 960px) {
+  .exp {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .exp-arte {
+    font-size: 2.5rem;
+    word-break: initial;
+  }
+  .exp-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: $c7;
+  }
+}
